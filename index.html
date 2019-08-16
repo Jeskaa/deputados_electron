@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Deputados</title>
+  <style type="text/css">
+     .nome {
+  width: 100%;
+  height: 110px;
+  color:#FBFBEF;
+  background-color: #0B610B;
+  font-size: 40px;
+  font-family: "Arial";
+  text-align: center;
+  margin-top:-50px;
+
+}
+.traço{
+   width: 100%;
+  height: 10px;
+  background-color: #F5DA81;
+  margin-top:-5px;
+
+}
+.dep{
+  width: 600px;
+  height: 160px ;
+  background-color: #ffff9e;
+   display: flex;
+    flex-direction: row;
+     margin-top:10px;
+     margin-left: 30%;
+     margin-bottom:10px;
+      border-radius: 10px;
+}
+.img{
+   width:200px;
+   height:160px;
+   border-radius: 10px;
+}
+.tab{
+   display: flex; 
+   flex-direction: column;
+}
+.botão{
+   width:200px;
+   height:50px;
+   margin-top:10px;
+    margin-left: 42%;
+    color:#FBFBEF;
+   border-top-width: 3px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+   border-top-color:  #F5DA81;
+  border-right-color: #F5DA81;
+  border-bottom-color:  #F5DA81;
+  border-left-color:  #F5DA81;
+   background-color: #0B610B;
+}
+   </style>
+</head>
+<body>    
+    <nav class="nome">
+      <h1>Deputados</h1>
+    </nav>
+   <nav class="traço"></nav>
+    <div id="resp"></div>
+<BUTTON class="botão" onClick="depu()">Buscar Deputados</BUTTON>
+<script type="text/babel" src="api.js"></script>      
+</body>
+</html>
